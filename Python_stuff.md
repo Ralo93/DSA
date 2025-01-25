@@ -56,6 +56,7 @@ def retry_with_backoff(max_retries=3, backoff_factor=2, exceptions=(Exception,))
     return decorator
 ```
 
+Logging predictions is always a good way to sanity check your model or to find anomalies which you should look into! Standard practice while developing any model.
 
 ```python
 def log_model_predictions(log_dir='./model_logs'):
