@@ -4,9 +4,7 @@
 ## 1. Clarify Requirements
 
 - Ask clarifying questions
-  
 - Understand input/output specifications
-  
 - Confirm and handle edge cases
   
 
@@ -16,38 +14,39 @@
 - Manually solve problem step-by-step
 - Identify underlying patterns and algorithms
 
-3. Initial Solution
+## 3. Initial Solution
 
-Develop initial approach (may be brute force)
-Demonstrate basic problem understanding
-Discuss initial time/space complexity
+- Develop initial approach (may be brute force)
+- Demonstrate basic problem understanding
+- Discuss initial time/space complexity
 
-4. Optimization Techniques
+## 4. Optimization Techniques
 
-Reduce time complexity
-Minimize space usage
-Explore alternative data structures
-Identify potential algorithmic improvements
+- Reduce time complexity
+- Minimize space usage
+- Explore alternative data structures
+- Identify potential algorithmic improvements
 
-5. Code Implementation
+## 5. Code Implementation
 
-Write clean, modular code
-Use meaningful variable names
-Implement robust error handling
-Follow language best practices
+- Write clean, modular code
+- Use meaningful variable names
+- Implement robust error handling
+- Follow language best practices
 
-6. Complexity Analysis
+## 6. Complexity Analysis
 
-Calculate Big O time complexity
-Analyze space requirements
-Explain algorithmic trade-offs
+- Calculate Big O time complexity
+- Analyze space requirements
+- Explain algorithmic trade-offs
 
-Key Skills
+# Key Skills
 
-Clear communication
-Strong algorithmic thinking
-Efficient coding techniques
-Systematic problem decomposition
+- Clear communication
+- Strong algorithmic thinking
+- Efficient coding techniques
+- Systematic problem decomposition
+- 
 # Core Algorithms:
 ![algomaster](https://github.com/user-attachments/assets/841a3644-2991-49fa-b1c3-620264ebe45a)
 
