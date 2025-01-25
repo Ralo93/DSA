@@ -1,5 +1,6 @@
-Useful python decorators for ML and data science
-
+Useful python decorators for ML and data science. Lets dive in!
+  
+So first we have a timing wrapper function for monitoring function performance and trying to find any bottlenecks. Really handy I think.
 
 ```python
 import functools
@@ -9,11 +10,10 @@ import os
 from typing import Any, Callable
 import numpy as np
 
-
-
 def timing_decorator(func): 
     def wrapper(args, **kwargs): 
-        start_time = time.time() result = func(args, kwargs) 
+        start_time = time.time()
+        result = func(args, kwargs) 
         end_time = time.time()
         logging.info(f"Function: {func.__name__}")
         print(f"Execution time: {end_time - start_time:.4f} seconds") 
@@ -28,7 +28,7 @@ Use: compute_square(100000) #
 ```
 
 
-
+```python
 def retry_with_backoff(max_retries=3, backoff_factor=2, exceptions=(Exception,)):
     """Retry decorator with exponential backoff for resilient function execution"""
     def decorator(func):
@@ -44,7 +44,10 @@ def retry_with_backoff(max_retries=3, backoff_factor=2, exceptions=(Exception,))
             raise Exception(f"Function {func.__name__} failed after {max_retries} attempts")
         return wrapper
     return decorator
+```
 
+
+```python
 def log_model_predictions(log_dir='./model_logs'):
     """Decorator to log model prediction details"""
     def decorator(func):
@@ -64,7 +67,11 @@ def log_model_predictions(log_dir='./model_logs'):
             return result
         return wrapper
     return decorator
+```
 
+
+
+```python
 def validate_input_shape(expected_dims=None):
     """Validate input tensor dimensions before processing"""
     def decorator(func):
@@ -77,7 +84,10 @@ def validate_input_shape(expected_dims=None):
             return func(*args, **kwargs)
         return wrapper
     return decorator
+```
 
+
+```python
 def memory_profile(func: Callable[..., Any]) -> Callable[..., Any]:
     """Memory profiling decorator using memory_profiler"""
     @functools.wraps(func)
@@ -87,6 +97,7 @@ def memory_profile(func: Callable[..., Any]) -> Callable[..., Any]:
         print(f"Memory Usage for {func.__name__}: {max(mem_usage)} MiB")
         return func(*args, **kwargs)
     return wrapper
+```
 
 # Example Usage
 @retry_with_backoff(max_retries=3)
