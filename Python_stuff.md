@@ -80,7 +80,8 @@ def log_model_predictions(log_dir='./model_logs'):
     return decorator
 ```
 
-
+This decorator function will help you validate input shapes, i think this can come very handy especially in deep learning where you need to think though your tensor dimensions anyway.
+In particular, this can save you from some silent failing processes where tensor operations do work but not in an expected way.
 
 ```python
 def validate_input_shape(expected_dims=None):
@@ -97,6 +98,7 @@ def validate_input_shape(expected_dims=None):
     return decorator
 ```
 
+Great function to check your memory profile for a single function call. Should not be used together with the timing function, as the execution time shoots up quite a lot.
 
 ```python
 def memory_profile(func: Callable[..., Any]) -> Callable[..., Any]:
