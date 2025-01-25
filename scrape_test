@@ -1,0 +1,284 @@
+# Challenge Descriptions:
+# Use only lambda, map(), filter(), or reduce() for each solution
+# Avoid traditional for loops and list comprehensions
+from functools import reduce
+
+
+def test_solutions():
+    """Run tests for each challenge"""
+    print("Testing your solutions...")
+    
+    # Challenge 1: Square Numbers
+    # Transform each number in the list to its square
+    assert square_numbers([1, 2, 3, 4, 5]) == [1, 4, 9, 16, 25], "Challenge 1 Failed"
+    
+    # Challenge 2: Filter Positive
+    # Keep only the positive numbers from the input list
+    assert filter_positive([-1, 0, 1, 2, -3, 4]) == [1, 2, 4], "Challenge 2 Failed"
+    
+    # Challenge 3: String Length
+    # Create a list of lengths for each input string
+    assert string_lengths(['python', 'lambda', 'function']) == [6, 6, 8], "Challenge 3 Failed"
+    
+    # Challenge 4: Sum of Numbers
+    # Calculate the total sum of all numbers in the list
+    assert sum_numbers([1, 2, 3, 4, 5]) == 15, "Challenge 4 Failed"
+    
+    # Challenge 5: Find Max
+    # Determine the maximum value in the list
+    assert find_max([10, 5, 8, 20, 3]) == 20, "Challenge 5 Failed"
+    
+    # Challenge 6: Uppercase Words
+    # Convert each word to uppercase
+    assert uppercase_words(['hello', 'world', 'python']) == ['HELLO', 'WORLD', 'PYTHON'], "Challenge 6 Failed"
+    
+    # Challenge 7: Filter Long Words
+    # Select words that are longer than 4 characters
+    assert filter_long_words(['cat', 'python', 'code', 'programming']) == ['python', 'programming'], "Challenge 7 Failed"
+    
+    # Challenge 8: Celsius to Fahrenheit
+    # Convert each Celsius temperature to Fahrenheit
+    assert celsius_to_fahrenheit([0, 10, 20, 30]) == [32.0, 50.0, 68.0, 86.0], "Challenge 8 Failed"
+    
+    # Challenge 9: Even Number Squares
+    # Square only the even numbers in the list
+    assert even_number_squares([1, 2, 3, 4, 5, 6]) == [4, 16, 36], "Challenge 9 Failed"
+    
+    # Challenge 10: Product of Numbers
+    # Calculate the product of all numbers in the list
+    assert product_numbers([1, 2, 3, 4, 5]) == 120, "Challenge 10 Failed"
+    
+    # Challenge 11: Palindrome Filter
+    # Keep only the words that read the same backward and forward
+    assert filter_palindromes(['radar', 'hello', 'level', 'python']) == ['radar', 'level'], "Challenge 11 Failed"
+    
+    # Challenge 12: Name Formatter
+    # Format names to show first initial and last name
+    assert format_names(['John Doe', 'Jane Smith']) == ['J. Doe', 'J. Smith'], "Challenge 12 Failed"
+    
+    # Challenge 13: Grade Classifier
+    # Convert numeric scores to letter grades
+    assert classify_grades([45, 75, 85, 95]) == ['F', 'C', 'B', 'A'], "Challenge 13 Failed"
+    
+    # Challenge 14: Flatten List
+    # Convert a list of lists into a single flat list
+    assert flatten_list([[1, 2], [3, 4], [5, 6]]) == [1, 2, 3, 4, 5, 6], "Challenge 14 Failed"
+    
+    # Challenge 15: Count Occurrences
+    # Count how many times a specific element appears in the list
+    assert count_occurrences([1, 2, 2, 3, 2, 4, 2], 2) == 4, "Challenge 15 Failed"
+    
+    print("All challenges passed! Great job!")
+
+
+def test_advanced_challenges():
+    """Run tests for advanced functional programming challenges"""
+    
+    # Challenge 16: Weighted Average
+    assert calculate_weighted_average(
+        [10, 20, 30], [0.2, 0.3, 0.5]
+    ) == 22.0, "Weighted Average Challenge Failed"
+    
+    # Challenge 17: Running Total
+    assert running_total([1, 2, 3, 4, 5]) == [1, 3, 6, 10, 15], "Running Total Challenge Failed"
+    
+    # Challenge 18: Group by Parity
+    assert group_by_parity([1, 2, 3, 4, 5, 6]) == {
+        'even': [2, 4, 6], 
+        'odd': [1, 3, 5]
+    }, "Group by Parity Challenge Failed"
+    
+    # Challenge 19: Cumulative Product
+    assert cumulative_product([1, 2, 3, 4, 5]) == [1, 2, 6, 24, 120], "Cumulative Product Challenge Failed"
+    
+    # Challenge 20: Dictionary Value Transformation
+    assert transform_dict_values(
+        {'a': 1, 'b': 2, 'c': 3}, 
+        lambda x: x ** 2
+    ) == {'a': 1, 'b': 4, 'c': 9}, "Dictionary Value Transformation Challenge Failed"
+    
+    # Challenge 21: Word Character Count
+    assert count_word_characters(['hello', 'world', 'python']) == [5, 5, 6], "Word Character Count Challenge Failed"
+    
+    # Challenge 22: Nested List Depth
+    assert calculate_list_depth([[1, 2], [3, [4, 5]], 6]) == 3, "Nested List Depth Challenge Failed"
+    
+    # Challenge 23: Prime Number Filter
+    assert filter_primes([2, 3, 4, 5, 6, 7, 8, 9, 10]) == [2, 3, 5, 7], "Prime Number Filter Challenge Failed"
+    
+    # Challenge 24: Frequency Dictionary
+    assert create_frequency_dict([1, 2, 2, 3, 3, 3]) == {1: 1, 2: 2, 3: 3}, "Frequency Dictionary Challenge Failed"
+    
+    # Challenge 25: Alternating Sign Sum
+    assert alternating_sign_sum([1, 2, 3, 4, 5]) == 3, "Alternating Sign Sum Challenge Failed"
+
+
+# Implement these functions using ONLY lambda, map, filter, or reduce
+# NO for loops, list comprehensions, or explicit iteration methods
+
+def square_numbers(numbers):
+    # Transform each number to its square
+
+
+    numbers = list(map(lambda x: x**2, numbers))
+    print(numbers)
+    return numbers
+    pass
+
+def filter_positive(numbers):
+    # Remove non-positive numbers
+
+
+    numbers = list(filter(lambda x: x>0, numbers))
+
+    return numbers
+
+    pass
+
+def string_lengths(words):
+    # Get length of each string
+
+    numbers = list(map(lambda x: len(x), words))
+    return numbers
+
+    pass
+
+def sum_numbers(numbers):
+    # Calculate total sum of numbers
+
+    numbers = reduce(lambda x,y :x+y, numbers)
+    print(numbers)
+    return numbers
+    pass
+
+def find_max(numbers):
+    # Find the largest number
+    
+    number = reduce(lambda x, y: x if x > y else y, numbers)
+    print(number)
+    return number
+
+    pass
+
+def uppercase_words(words):
+    # Convert words to uppercase
+
+    words = list(map(lambda x: x.upper(), words))
+    return words
+
+    pass
+
+def filter_long_words(words):
+    # Keep words longer than 4 characters
+
+    words = list(filter(lambda x: len(x) > 4, words))
+    return words
+    pass
+
+def celsius_to_fahrenheit(temperatures):
+    # Convert Celsius to Fahrenheit
+
+    temps = list(map(lambda c: (c * 9/5) + 32, temperatures))
+    return temps
+    pass
+
+def even_number_squares(numbers):
+    # Square only even numbers
+
+    numbers = list(map(lambda x: x**2, list(filter(lambda x: x % 2 == 0, numbers))))
+    print(numbers)
+    return numbers
+    pass
+
+def product_numbers(numbers):
+    # Calculate product of all numbers
+
+    numbers = reduce(lambda x, y: x*y, numbers, 1)
+    return numbers
+    pass
+
+def filter_palindromes(words):
+    # Keep palindrome words
+
+    words = list(filter(lambda x: x == x[::-1], words))
+    return words
+    pass
+
+def format_names(names):
+    # Format names to initial + last name
+
+    names = list(map(lambda x: x[:1] + ". " + x.split( )[1], names))
+    print(names)
+    return names
+    pass
+
+def classify_grades(scores):
+    # Convert scores to letter grades
+
+    scores = list(map(lambda score: 'A' if score >= 90 else 'B' if score >= 80 else 'C' if score >= 70 else 'D' if score >= 60 else 'F', scores))
+    print(scores)
+    return scores
+    pass
+
+def flatten_list(nested_list):
+    # Flatten a list of lists
+
+    flattend = reduce(lambda x, y: x + y, nested_list)
+    return flattend
+    pass
+
+def count_occurrences(numbers, target):
+    # Count occurrences of a specific number
+
+    max_number = len(list(filter(lambda x: x == target, numbers)))
+
+    max_number = reduce(lambda count, x: count + (x == target), numbers, 0)
+    return max_number
+    pass
+
+
+def calculate_weighted_average(values, weights):
+    # Calculate weighted average using functional methods
+    pass
+
+def running_total(numbers):
+    # Create list of cumulative sums
+    pass
+
+def group_by_parity(numbers):
+    # Separate numbers into even and odd groups
+    pass
+
+def cumulative_product(numbers):
+    # Calculate list of cumulative products
+    pass
+
+def transform_dict_values(dictionary, transform_func):
+    # Apply transformation to dictionary values
+    pass
+
+def count_word_characters(words):
+    # Count characters in each word
+    pass
+
+def calculate_list_depth(nested_list):
+    # Calculate maximum nesting depth of a list
+    pass
+
+def filter_primes(numbers):
+    # Filter out prime numbers
+    pass
+
+def create_frequency_dict(numbers):
+    # Create dictionary of number frequencies
+    pass
+
+def alternating_sign_sum(numbers):
+    # Calculate sum with alternating signs
+    pass
+
+# Uncomment to run tests
+# test_advanced_challenges()
+
+# Uncomment to run tests
+test_solutions()
