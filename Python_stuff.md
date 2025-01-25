@@ -2,11 +2,20 @@ Useful python decorators for ML and data science
 
 
 ```python
-import time 
+import functools
+import time
+import logging
+import os
+from typing import Any, Callable
+import numpy as np
+
+
+
 def timing_decorator(func): 
     def wrapper(args, **kwargs): 
         start_time = time.time() result = func(args, kwargs) 
-        end_time = time.time() 
+        end_time = time.time()
+        logging.info(f"Function: {func.__name__}")
         print(f"Execution time: {end_time - start_time:.4f} seconds") 
         return result 
     return wrapper 
@@ -16,13 +25,8 @@ def compute_square(n):
     return [x2 for x in range(n)] 
     
 Use: compute_square(100000) # 
+```
 
-import functools
-import time
-import logging
-import os
-from typing import Any, Callable
-import numpy as np
 
 
 def retry_with_backoff(max_retries=3, backoff_factor=2, exceptions=(Exception,)):
