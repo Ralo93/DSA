@@ -8,3 +8,9 @@ A generator expression looks like this: (there is no tuple comprehension in pyth
 
 squares = (x**2 for x in range(1000))
 ```
+
+### ML Framework Integration:
+
+TensorFlow: tf.data.Dataset.from_generator()
+PyTorch: Custom data loaders
+Scikit-learn: Custom iterators for preprocessing
