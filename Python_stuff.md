@@ -28,6 +28,10 @@ Use: compute_square(100000) #
 ```
 
 
+Next Claude provided me with a great retry mechanism with an exponential backoff factor. 
+Great for any network transmission tasks like API calls, up or downloads or message queue interactions or microservice communications.
+
+
 ```python
 def retry_with_backoff(max_retries=3, backoff_factor=2, exceptions=(Exception,)):
     """Retry decorator with exponential backoff for resilient function execution"""
