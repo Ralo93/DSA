@@ -1,3 +1,22 @@
+Useful python decorators for ML and data science
+
+
+```python
+import time 
+def timing_decorator(func): 
+    def wrapper(args, **kwargs): 
+        start_time = time.time() result = func(args, kwargs) 
+        end_time = time.time() 
+        print(f"Execution time: {end_time - start_time:.4f} seconds") 
+        return result 
+    return wrapper 
+    
+@timing_decorator 
+def compute_square(n): 
+    return [x2 for x in range(n)] 
+    
+Use: compute_square(100000) # 
+
 import functools
 import time
 import logging
@@ -5,7 +24,7 @@ import os
 from typing import Any, Callable
 import numpy as np
 
-```python
+
 def retry_with_backoff(max_retries=3, backoff_factor=2, exceptions=(Exception,)):
     """Retry decorator with exponential backoff for resilient function execution"""
     def decorator(func):
