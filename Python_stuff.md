@@ -109,14 +109,26 @@ def memory_profile(func: Callable[..., Any]) -> Callable[..., Any]:
     return wrapper
 ```
 
+
+```python
 # Example Usage
+@timing_decorator
 @retry_with_backoff(max_retries=3)
 @log_model_predictions(log_dir='./ml_logs')
 @validate_input_shape(expected_dims=2)
+@memory_profile
 def process_data(data):
     """Sample function simulating data processing"""
     return np.mean(data, axis=0)
 
+
 # Demonstrative usage
-sample_data = np.random.rand(100, 10)
-processed_result = process_data(sample_data)
+def main():
+    sample_data = np.random.rand(100, 10)
+    processed_result = process_data(sample_data)
+    
+    #complex_result = process_data(100000)
+
+if __name__ == "__main__":
+    
+    main()
