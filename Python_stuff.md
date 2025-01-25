@@ -10,15 +10,21 @@ import os
 from typing import Any, Callable
 import numpy as np
 
-def timing_decorator(func): 
-    def wrapper(args, **kwargs): 
+def timing_decorator(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
         start_time = time.time()
-        result = func(args, kwargs) 
+        result = func(*args, **kwargs)
         end_time = time.time()
+        
+        # Configure logging if not already configured
+        logging.basicConfig(level=logging.INFO, format='%(message)s')
+        
         logging.info(f"Function: {func.__name__}")
-        print(f"Execution time: {end_time - start_time:.4f} seconds") 
-        return result 
-    return wrapper 
+        print(f"Execution time: {end_time - start_time:.4f} seconds")
+        
+        return result
+    return wrapper
     
 @timing_decorator 
 def compute_square(n): 
