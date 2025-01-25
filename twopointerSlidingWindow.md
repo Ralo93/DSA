@@ -2,6 +2,8 @@
 
 # Core Algorithms:
 
+Two Pointer
+  
 Binary Search 
 
 DFS
@@ -9,6 +11,5 @@ DFS
 BFS
 
 Sliding Window
-
-Two Pointer
   
+Ask WHY does some algorithm actually work?
