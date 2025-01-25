@@ -1,16 +1,20 @@
-# Sliding Window, Two Pointers
-Problem-Solving Strategy for Coding Interviews
-1. Clarify Requirements
 
-Ask clarifying questions
-Understand input/output specifications
-Confirm and handle edge cases
+# Problem-Solving Strategy for Coding Interviews
+  
+## 1. Clarify Requirements
 
-2. Example Walkthrough
+- Ask clarifying questions
+  
+- Understand input/output specifications
+  
+- Confirm and handle edge cases
+  
 
-Create representative sample input
-Manually solve problem step-by-step
-Identify underlying patterns and algorithms
+## 2. Example Walkthrough
+
+- Create representative sample input
+- Manually solve problem step-by-step
+- Identify underlying patterns and algorithms
 
 3. Initial Solution
 
