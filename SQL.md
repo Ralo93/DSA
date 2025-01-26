@@ -5,7 +5,7 @@
 - Does the table need to be joined with itself?
 
 
-## Learnings in January:
+## SET Operations:
 
 - UNION, INTERSECT and DIFFERENCE need the same columns for joining together.
 - UNION does not keep duplicates! UNION ALL keeps it.
@@ -76,8 +76,14 @@ WHERE city LIKE '_r%' # second letter is r
 ```
 
 
-
 ## CASE Statements
+
+```sql
+CASE
+  WHEN cost < 100 then 'cheap'
+  WHEN cost between 100 and 200 then 'mid-tier'
+  else 'luxury' end as product_type
+```
 
 SQL supports modulo function!
 
