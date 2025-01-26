@@ -1,11 +1,37 @@
-# Learnings in January:
+# **Problem-Solving Strategy:**
 
+- Read the problem carefully.
+- Clarify return constraints, is there a demanded order, rounding etc.?
+- Does the table need to be joined with itself?
+
+
+## Learnings in January:
 
 - UNION, INTERSECT and DIFFERENCE need the same columns for joining together.
 - UNION does not keep duplicates! UNION ALL keeps it.
 - INTERSECT only returns rows that match from botch sides
 - DIFFERENCE would return only rows which are NOT in both tables
-  
+
+## NULLS
+
+SQL can not count or do comparisons with NULL values. These need to be handled specifically.
+
+
+## SELECT
+```sql
+select distinct building_name, role
+from buildings
+left join employees on building_name = building
+```
+will product distinct PAIRS of building_names and roles!
+
+## Conditions
+
+use AND and OR. 
+is not NULL
+is NULL
+NOT in ('usa', 'canada')
+!= (<>) both work
 
 ## JOINS:
 
@@ -19,6 +45,7 @@ CROSS JOIN: Creates a cartesian-product of tables, so all rows from one table ar
 
 SELF JOIN (with aliases): Lets you create joins with only one table - usually with aliases to make a differentiation.
 
+You can use multiple conditions on joins.
 
 ## Aggregations
 
@@ -33,6 +60,6 @@ Others include ROUND(EXPRESSION, decimals) and CAST(value AS DECIMAL):
 
 ## Filters
 
-WHERE looks at every row
+WHERE looks at every row, so this is used BEFORE grouping.
 HAVING looks at every group. So you need to group first.
 
