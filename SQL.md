@@ -20,3 +20,11 @@ CROSS JOIN: Creates a cartesian-product of tables, so all rows from one table ar
 SELF JOIN (with aliases): Lets you create joins with only one table - usually with aliases to make a differentiation.
 
 
+## Aggregations
+
+Return a single value, examples: MAX, MIN, AVG, SUM, COUNT.
+
+Others include ROUND(EXPRESSION, decimals) and CAST(value AS DECIMAL):
+
+- ROUND(SUM(CAST(units * price AS DECIMAL)) / SUM(units), 2) AS average_price
+
