@@ -28,3 +28,11 @@ Others include ROUND(EXPRESSION, decimals) and CAST(value AS DECIMAL):
 
 - ROUND(SUM(CAST(units * price AS DECIMAL)) / SUM(units), 2) AS average_price
 
+### Using AGGREGATIONS or HAVING, demand you to have all non-aggregated select fields in the group by clause!
+
+
+## Filters
+
+WHERE looks at every row
+HAVING looks at every group. So you need to group first.
+
