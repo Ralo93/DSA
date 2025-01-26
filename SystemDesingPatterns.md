@@ -6,7 +6,9 @@
 
 - Horizontal, vs Vertical Scaling of systems. Scaling of ML models.
 
-## Reliability: Ensuring systems are fault-tolerant and can recover from failures.
+## Reliability (Robustness): Ensuring systems are fault-tolerant and can recover from failures.
+
+-
 
 ## Performance: Optimizing systems for speed and efficiency.
 
