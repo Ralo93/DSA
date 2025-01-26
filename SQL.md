@@ -65,3 +65,21 @@ ROUND(SUM(CAST(units * price AS DECIMAL)) / SUM(units), 2) AS average_price
 WHERE looks at every row, so this is used BEFORE grouping.
 HAVING looks at every group. So you need to group first.
 
+Filter text with:
+
+```sql
+WHERE city LIKE 'New%' # starts with New
+
+WHERE city LIKE '%x%' # contains x
+
+WHERE city LIKE '_r%' # second letter is r
+```
+
+
+
+## CASE Statements
+
+SQL supports modulo function!
+
+
+
