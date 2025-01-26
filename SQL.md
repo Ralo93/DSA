@@ -53,7 +53,9 @@ Return a single value, examples: MAX, MIN, AVG, SUM, COUNT.
 
 Others include ROUND(EXPRESSION, decimals) and CAST(value AS DECIMAL):
 
-- ROUND(SUM(CAST(units * price AS DECIMAL)) / SUM(units), 2) AS average_price
+```sql
+ROUND(SUM(CAST(units * price AS DECIMAL)) / SUM(units), 2) AS average_price
+```
 
 ### Using AGGREGATIONS or HAVING, demand you to have all non-aggregated select fields in the group by clause!
 
