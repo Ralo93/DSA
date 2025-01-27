@@ -64,6 +64,8 @@ Read from the Cache.
 
 - Redirecting (routing) requests to different application servers to handle high-load scenarios. This is usually done with Round-Robin, Weightened Round-Robin, Hash-based (for user persistance) or Least connections algorithms.
 
+- My to go choice is probably NGINX, as it supports HTTP, TCP, various balancing algorithms like IP-Hash or Round-Robin and can run on windows, mac and linux. And it can also run as a service in a docker container!
+
 ## Fault tolerance mechanisms
 
 
