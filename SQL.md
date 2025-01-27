@@ -33,9 +33,13 @@ is NULL
 NOT in ('usa', 'canada')
 != (<>) both work
 
-### Usage of IN:
+#### Usage of IN:
 
 where skill in ('Python', 'Tableau', 'PostgreSQL')
+
+#### Usage of BETWEEN
+
+where skill_level between 5 and 10
 
 ## JOINS:
 
