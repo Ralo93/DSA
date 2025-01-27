@@ -15,6 +15,14 @@ Uses an API gateway (like NGINX or Envoy) to route, rate limit and aggregate ans
 
 - Vertical Scaling means using more powerful machines.
 
+- Caching: Storing hot-data in memory for fast access, reducing load on the database.
+
+- Buffer with message queues: High frequent write operations can put a strain on the database. Message queues work as a buffer, transforming synchronous operations into asynchronous.
+
+- Seperating Read and Write: In most business use cases these should be handled differently.
+
+- 
+
 ## Reliability (Robustness): Ensuring systems are fault-tolerant and can recover from failures.
 
 -
@@ -40,3 +48,16 @@ Uses an API gateway (like NGINX or Envoy) to route, rate limit and aggregate ans
 - Redirecting (routing) requests to different application servers to handle high-load scenarios. This is usually done with Round-Robin, Weightened Round-Robin, Hash-based (for user persistance) or Least connections algorithms.
 
 ## Fault tolerance mechanisms
+
+
+## Data Architecture
+Understanding of data lakes, data warehouses, and data marts.
+
+Knowledge of batch vs. real-time processing.
+
+Event-driven architectures.
+
+## Distributed Systems
+Understanding of distributed computing principles.
+
+CAP theorem, consistency models, and fault tolerance.
