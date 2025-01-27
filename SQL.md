@@ -33,6 +33,10 @@ is NULL
 NOT in ('usa', 'canada')
 != (<>) both work
 
+### Usage of IN:
+
+where skill in ('Python', 'Tableau', 'PostgreSQL')
+
 ## JOINS:
 
 LEFT JOIN: Returns ALL rows from the left table and inserts NULLs where there is no entry from the right table.
