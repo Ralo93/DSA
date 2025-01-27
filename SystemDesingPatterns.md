@@ -32,6 +32,14 @@ Uses an API gateway (like NGINX or Envoy) to route, rate limit and aggregate ans
      - Asynchronous update between to the.
      - Used in very complex query or different read and write scalability requirements.
 
+In summary: Write to a message queue via a write service and have the workers/consumers update the databaset and write to the Cache.
+Read from the Cache.
+
+
+
+  ![image](https://github.com/user-attachments/assets/30e9b122-304b-4d6e-bb89-94f1f0bd866d)
+
+
 ## Reliability (Robustness): Ensuring systems are fault-tolerant and can recover from failures.
 
 -
