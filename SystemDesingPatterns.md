@@ -19,7 +19,12 @@ Uses an API gateway (like NGINX or Envoy) to route, rate limit and aggregate ans
 
 - Buffer with message queues: High frequent write operations can put a strain on the database. Message queues work as a buffer, transforming synchronous operations into asynchronous.
 
-- Seperating Read and Write: In most business use cases these should be handled differently.
+- Seperating Read and Write in either READ-HEAVY or WRITE-HEAVY Systems: In most business use cases these should be handled differently:
+  1. Replication implements a Leader-Follower architecture:
+     - All Writes are routed to the leader, ensuring consistency.
+     - Reads are distributed across followers, improving read scalability.
+     - Fault Tolerance: If the leader fails, a follower can be promoted.
+  2. 
 
 - 
 
