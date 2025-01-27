@@ -24,9 +24,13 @@ Uses an API gateway (like NGINX or Envoy) to route, rate limit and aggregate ans
      - All Writes are routed to the leader, ensuring consistency.
      - Reads are distributed across followers, improving read scalability.
      - Fault Tolerance: If the leader fails, a follower can be promoted.
-  2. 
-
-- 
+     - Used in read or write heavy systems.
+  2. CQRS (Command Query Responsibility Segregation)
+     - Using completely different data models for read and write operations.
+     - Normalized data model optimized for writes. (Command side)
+     - Denormalized data model optimized for reads.
+     - Asynchronous update between to the.
+     - Used in very complex query or different read and write scalability requirements.
 
 ## Reliability (Robustness): Ensuring systems are fault-tolerant and can recover from failures.
 
