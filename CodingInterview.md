@@ -77,7 +77,14 @@ for i in range(1, len(array)):
 ```
 
 
-- Two Pointer
+## Two Pointer
+
+Usually creates two pointers, which are moving towards or away from each other.
+
+### Fast and Slow Pointer
+
+usually used for finding cycles OR to find the middle element of a linkedList (Here the slow pointer will be at the middle if the fast reached the end).
+
 - Binary Search 
 - DFS
 - BFS
