@@ -85,9 +85,12 @@ Usually creates two pointers, which are moving towards or away from each other.
 
 usually used for finding cycles OR to find the middle element of a linkedList (Here the slow pointer will be at the middle if the fast reached the end).
 
+## LinkedList reverse Pattern
+
 - Binary Search 
 - DFS
 - BFS
+  
 ##  Sliding Window
 
 This is basically also a two pointer problem, where you store the intermediate results, BUT you dont want to calculate the full result every time.
