@@ -60,6 +60,7 @@ This is basically also a two pointer problem, where you store the intermediate r
 Maintain the pointers one by one, so e.g. take the new element which entered the window and subtract the element which got out of the window. Keep a rolling sum from the previous element.
   
  -> 2 calculations instead of calculating the whole sum. For large numbers, this is still 2 calculations instead of thousands!
+ So the new sum can be calculated in constant time instead of k.
  
   
 Ask WHY does some algorithm actually work?
