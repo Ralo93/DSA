@@ -15,7 +15,7 @@
 <td width="33%" style="border: none; vertical-align: top;">
 
 # Data Engineer
-- Database design and SQL
+- Database design and SQL ( a lot)
 - DSA and system design
 - Data warehousing concepts
 - ETL pipeline design
