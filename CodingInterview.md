@@ -58,6 +58,7 @@
 
 This is basically also a two pointer problem, where you store the intermediate results, BUT you dont want to calculate the full result every time.
 Maintain the pointers one by one, so e.g. take the new element which entered the window and subtract the element which got out of the window. Keep a rolling sum from the previous element.
+  
  -> 2 calculations instead of calculating the whole sum. For large numbers, this is still 2 calculations instead of thousands!
  
   
