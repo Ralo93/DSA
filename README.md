@@ -1,4 +1,4 @@
-# **Structured Learning Path for Data Structures & Algorithms (DSA) in Python (For Coding Interviews)**
+# **Structured Learning Path**
 
 
 <table style="border-collapse: collapse;">
