@@ -4,30 +4,30 @@
 <table style="border-collapse: collapse;">
 <tr style="border: none;">
 <td width="33%" style="border: none; vertical-align: top;">
-ML Engineer
 
-Machine learning fundamentals
-DSA and system design
-Deep learning frameworks
-Distributed computing
-
-</td>
-<td width="33%" style="border: none; vertical-align: top;">
-Data Engineer
-
-Database design and SQL
-DSA and system design
-Data warehousing concepts
-ETL pipeline design
+# ML Engineer
+- Machine learning fundamentals
+- DSA and system design
+- Deep learning frameworks
+- Distributed computing
 
 </td>
 <td width="33%" style="border: none; vertical-align: top;">
-Data Scientist
 
-Statistics and probability
-ML algorithms and applications
-SQL and data manipulation
-Basic DSA concepts
+# Data Engineer
+- Database design and SQL
+- DSA and system design
+- Data warehousing concepts
+- ETL pipeline design
+
+</td>
+<td width="33%" style="border: none; vertical-align: top;">
+
+# Data Scientist
+- Statistics and probability
+- ML algorithms and applications
+- SQL and data manipulation
+- Basic DSA concepts
 
 </td>
 </tr>
