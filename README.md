@@ -1,7 +1,25 @@
 # **Structured Learning Path for Data Structures & Algorithms (DSA) in Python (For Coding Interviews)**
+---
+## ML Engineer priorities:
 
-If you're preparing for **technical interviews** and don't have extensive DSA knowledge yet, here’s a **step-by-step learning plan** to help you **master DSA efficiently** in **Python**.
+Machine learning fundamentals
+DSA and system design
+Deep learning frameworks
+Distributed computing
 
+## Data Engineer priorities:
+
+Database design and SQL
+DSA and system design
+Data warehousing concepts
+ETL pipeline design
+
+## Data Scientist priorities:
+
+Statistics and probability
+ML algorithms and applications
+SQL and data manipulation
+Basic DSA concepts
 ---
 
 ## **🔹 Phase 1: Build a Strong Foundation (Python & Complexity Analysis)**
