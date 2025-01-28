@@ -66,6 +66,16 @@ array = [1, 3, 6, 10, 15]
 ```
 Now you can query the SUM of a subarray like: SUM[i, j] = P[j] - P[i-1]
 
+This can even be done in-place:
+
+```python
+array = [1, 2, 3, 4, 5]
+
+for i in range(1, len(array)):
+  arr[i] += arr[i-1]
+
+```
+
 
 - Two Pointer
 - Binary Search 
