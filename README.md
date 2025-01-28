@@ -2,7 +2,7 @@
 <table>
 <tr>
 <td width="33%">
-ML Engineer priorities:
+## ML Engineer priorities:
 
 Machine learning fundamentals
 DSA and system design
@@ -11,7 +11,7 @@ Distributed computing
 
 </td>
 <td width="33%">
-Data Engineer priorities:
+## Data Engineer priorities:
 
 Database design and SQL
 DSA and system design
