@@ -50,6 +50,22 @@
 # Core Algorithms:
 ![algomaster](https://github.com/user-attachments/assets/841a3644-2991-49fa-b1c3-620264ebe45a)
 
+
+## - Prefix Sum Pattern
+
+Given an array like 
+
+```python
+array = [1, 2, 3, 4, 5]
+```
+The prefix sum array will look like:
+
+```python
+array = [1, 3, 6, 10, 15]
+```
+Now you can query the SUM of a subarray like: SUM[i, j] = P[j] - P[i-1]
+
+
 - Two Pointer
 - Binary Search 
 - DFS
