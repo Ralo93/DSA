@@ -141,7 +141,7 @@ return minimum_length if minimum_length != math.inf else 0
 
 ## Dynamic Programming
 
-
+- Solving optimization problems by breaking them down to smaller sub-problems and storing their solutions to avoid repetitive work.
 
   
 Ask WHY does some algorithm actually work?
