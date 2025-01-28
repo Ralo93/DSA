@@ -101,12 +101,15 @@ usually used for finding cycles OR to find the middle element of a linkedList (H
 
 - Use PreOrder, InOrder, PostOrder, LevelOrder Traversal
 
-## 
+## DFS
 
-## 
+- Using a Stack (iteratevly or recursively)
+
 - Binary Search 
-- DFS
-- BFS
+
+## BFS
+
+- Using a queue 
   
 ##  Sliding Window
 
@@ -132,8 +135,13 @@ for right in range(len(nums)):
     left += 1
 
 return minimum_length if minimum_length != math.inf else 0
-
 ```
- 
+
+## Backtracking: Explorint all potential solution paths
+
+## Dynamic Programming
+
+
+
   
 Ask WHY does some algorithm actually work?
