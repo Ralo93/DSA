@@ -112,12 +112,13 @@ group by p.product_id
 ## DATE Functions
 
 Between dates include the boundaries.
-To take the last 30 days, starting from a certain date you can do:
+To take the last 30 days including a certain last date, starting from a certain date you can do:
 
 ```sql
 SELECT activity_date AS day, COUNT(DISTINCT user_id) AS active_users
 FROM activity
-WHERE activity_date BETWEEN DATE_SUB('2019-07-27', INTERVAL 30 DAY) AND '2019-07-27'
+WHERE activity_date BETWEEN DATE_SUB('2019-07-27', INTERVAL 29 DAY) AND '2019-07-27'
 GROUP BY activity_date;
 ```
+Why 29? Well because you want the last day included, which then results in the date_sub of 29 - the 29 days before it. Since the boundaries are included, this gives you the last 30 days.
 
