@@ -61,6 +61,25 @@ Maintain the pointers one by one, so e.g. take the new element which entered the
   
  -> 2 calculations instead of calculating the whole sum. For large numbers, this is still 2 calculations instead of thousands!
  So the new sum can be calculated in constant time instead of k.
+
+ So in most cases it is something like this:
+
+ ```python
+left = 0
+current_sum = 0
+minimum_length = math.inf
+
+for right in range(len(nums)):
+  curr_sum += nums[right]
+
+  while curr_sum >= target:
+    minimum_length = min(minimum_lenght, right-left+1)
+    current_sum -= nums[left]
+    left += 1
+
+return minimum_length if minimum_length != math.inf else 0
+
+```
  
   
 Ask WHY does some algorithm actually work?
