@@ -122,3 +122,13 @@ GROUP BY activity_date;
 ```
 Why 29? Well because you want the last day included, which then results in the date_sub of 29 - the 29 days before it. Since the boundaries are included, this gives you the last 30 days.
 
+
+### Getting Unique Items:
+
+```sql
+Select num
+from numbers
+group by num
+having count(num) = 1
+
+```
