@@ -87,6 +87,23 @@ usually used for finding cycles OR to find the middle element of a linkedList (H
 
 ## LinkedList reverse Pattern
 
+## Monotonic Stack Pattern
+
+## Top K Elements Pattern
+
+(Sorting takes O(n*lognn), with a Heap you get to O(n*logk)
+
+## Overlapping Intervalls Pattern
+
+## Modified Binary Search Pattern
+
+## Binary Tree Traversal
+
+- Use PreOrder, InOrder, PostOrder, LevelOrder Traversal
+
+## 
+
+## 
 - Binary Search 
 - DFS
 - BFS
