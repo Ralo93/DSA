@@ -33,6 +33,16 @@
 </tr>
 </table>
 
+
+# Core Algorithms:
+![algomaster](https://github.com/user-attachments/assets/841a3644-2991-49fa-b1c3-620264ebe45a)
+
+
+## Learning Path:
+
+![image](https://github.com/user-attachments/assets/ecf48de8-0710-4afc-a4a2-6042d7617eb7)
+
+
 ## **🔹 Phase 1: Build a Strong Foundation (Python & Complexity Analysis)**
 ### **1️⃣ Master Python Basics (If Needed)**
 - Lists, Strings, Dictionaries, Sets, Tuples
