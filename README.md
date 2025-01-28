@@ -1,16 +1,18 @@
 # **Structured Learning Path for Data Structures & Algorithms (DSA) in Python (For Coding Interviews)**
-<table style="border: none;">
-<tr>
-<td width="33%" style="border: none;">
+
+
+<table style="border-collapse: collapse;">
+<tr style="border: none;">
+<td width="33%" style="border: none; vertical-align: top;">
 ML Engineer
-  
-- Machine learning fundamentals
-- DSA and system design
-- Deep learning frameworks
-- Distributed computing
+
+Machine learning fundamentals
+DSA and system design
+Deep learning frameworks
+Distributed computing
 
 </td>
-<td width="33%" style="border: none;">
+<td width="33%" style="border: none; vertical-align: top;">
 Data Engineer
 
 Database design and SQL
@@ -19,7 +21,7 @@ Data warehousing concepts
 ETL pipeline design
 
 </td>
-<td width="33%" style="border: none;">
+<td width="33%" style="border: none; vertical-align: top;">
 Data Scientist
 
 Statistics and probability
