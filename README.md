@@ -2,24 +2,24 @@
 ---
 ## ML Engineer priorities:
 
-Machine learning fundamentals
-DSA and system design
-Deep learning frameworks
-Distributed computing
+- Machine learning fundamentals
+- DSA and system design
+- Deep learning frameworks
+- Distributed computing
 
 ## Data Engineer priorities:
 
-Database design and SQL
-DSA and system design
-Data warehousing concepts
-ETL pipeline design
+- Database design and SQL
+- DSA and system design
+- Data warehousing concepts
+- ETL pipeline design
 
 ## Data Scientist priorities:
 
-Statistics and probability
-ML algorithms and applications
-SQL and data manipulation
-Basic DSA concepts
+- Statistics and probability
+- ML algorithms and applications
+- SQL and data manipulation
+- Basic DSA concepts
 ---
 
 ## **🔹 Phase 1: Build a Strong Foundation (Python & Complexity Analysis)**
