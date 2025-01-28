@@ -50,6 +50,7 @@
 # Core Algorithms:
 ![algomaster](https://github.com/user-attachments/assets/841a3644-2991-49fa-b1c3-620264ebe45a)
 
+# Patterns
 
 ## - Prefix Sum Pattern
 
