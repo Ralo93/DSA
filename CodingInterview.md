@@ -143,5 +143,19 @@ return minimum_length if minimum_length != math.inf else 0
 
 - Solving optimization problems by breaking them down to smaller sub-problems and storing their solutions to avoid repetitive work.
 
+### Fobonacci Numbers
+
+### O/1 Knapsack
+
+### Longest Common Subsequence
+
+### Longest Increasing Subsequenec
+
+### Subset Sum
+
+### Matrix Chain Multiplication
+
+
+
   
 Ask WHY does some algorithm actually work?
