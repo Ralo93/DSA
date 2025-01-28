@@ -19,6 +19,9 @@ If you're preparing for **technical interviews** and don't have extensive DSA kn
 ---
 
 ## **🔹 Phase 2: Master Core Data Structures**
+
+![image](https://github.com/user-attachments/assets/c47b33cc-cc93-4461-b5e2-cc595f092f0a)
+
 ### **3️⃣ Arrays & Strings**
 - **Topics:** Sliding Window, Two Pointers, Prefix Sum
 - **Problems:**
