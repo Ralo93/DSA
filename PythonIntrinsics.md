@@ -22,7 +22,7 @@ lambda Functions are in this form: lambda {arguments} : {operation}
 ## Map, Reduce and Filter
 
 Map and Filter are already part of python itself, only reduce needs to be imported from functools.reduce().
-All take a function and an iterable as an argument.
+All three take a function and an iterable as an argument.
 
 The trick is to get the function right.
 
