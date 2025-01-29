@@ -83,10 +83,10 @@ def memory_profile(func: Callable[..., Any]) -> Callable[..., Any]:
 
 # Example Usage
 @timing_decorator
-#@retry_with_backoff(max_retries=3)
+@retry_with_backoff(max_retries=3)
 @log_model_predictions(log_dir='./ml_logs')
 @validate_input_shape(expected_dims=2)
-#@memory_profile
+@memory_profile
 def process_data(data):
     """Sample function simulating data processing"""
     return np.mean(data, axis=0)
