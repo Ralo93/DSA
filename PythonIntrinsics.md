@@ -55,3 +55,14 @@ print(scalar)
 
 #### REDUCE RETURNS A SCALAR!
 #### REDUCE has a third parameter, which is an optional starting value. 
+
+
+## All() and Any()
+
+Return a single value, either True or False, if the condition holds for all or any of the elements of the iterable.
+Empty Strings, False, None and 0 as well as empty iterables are considered False.
+
+## GroupBy(), Accumulate(), Product() and Combinations()
+
+
+
