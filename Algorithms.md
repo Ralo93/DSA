@@ -16,3 +16,30 @@
 - The loop should continue until a condition is met
 - Complex iteration logic
 - Need for modifying the loop control variable within the loop
+
+Example:
+
+```python
+def birthday(s, d, m):
+
+    # sum of elements should be d, length of elements should be m
+    # return should be number of sub-arrays which meet the conditions
+    
+    if m > len(s):
+        return 0
+        
+    sub_array_counter = 0
+    curr_sum = sum(s[:m])
+    
+    if curr_sum == d:
+        sub_array_counter += 1
+        
+    for i in range(len(s) - m):
+        
+        curr_sum = curr_sum - s[i] + s[i+m]
+        
+        if curr_sum == d:
+            sub_array_counter += 1
+            
+    return sub_array_counter
+```
