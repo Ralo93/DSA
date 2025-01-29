@@ -30,13 +30,20 @@ For Map, you need a function which maps one element to itself. E.g.
 ```python
 lambda x: x**2
 ```
+
+#### MAP RETURNS AN ITERABLE! Convert to a list.
+
 For Filter, you need a function which checks an element against a condition and returns either True or False. E.g.
 ```python
 lambda x: x % 2 == 0
 ```
+
+#### FILTER RETURNS AN ITERABLE! Convert to a list.
+
+
 And for Reduce, you need a function which computes one element with its next element from the iterable. This is the only function of those three, which takes two arguments. E.g.
 ```python
 lambda x, y: x + y
 ```
 
-
+#### FILTER RETURNS AN ITERABLE! Convert to a list.
