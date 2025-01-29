@@ -44,6 +44,14 @@ lambda x: x % 2 == 0
 And for Reduce, you need a function which computes one element with its next element from the iterable. This is the only function of those three, which takes two arguments. E.g.
 ```python
 lambda x, y: x + y
+
+arr = [1, 2, 3, 4, 5]
+import functools
+scalar = functools.reduce(lambda x, y: x + y, arr, 1)
+print(scalar)
+
+# 16
 ```
 
-#### FILTER RETURNS AN ITERABLE! Convert to a list.
+#### REDUCE RETURNS A SCALAR!
+#### REDUCE has a third parameter, which is an optional starting value. 
