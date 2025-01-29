@@ -134,7 +134,7 @@ for right in range(len(nums)):
 return minimum_length if minimum_length != math.inf else 0
 ```
 
-## Backtracking: Explorint all potential solution paths
+## Backtracking: Exploring all potential solution paths
 
 ## Dynamic Programming
 
