@@ -45,5 +45,16 @@ stack.pop() # The pop method
 ```
 Both Operations are in O(1) BUT stack.pop(0) has O(N). Use collections.deque here becaus deque.popleft() has O(1)
 
+## Binary trees
+
+
+## Heaps
+
+
+## Hash Tables
+
+
+## Binary search trees
+
 
 
