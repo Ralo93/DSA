@@ -32,7 +32,7 @@ lambda x: x**2
 ```
 For Filter, you need a function which checks an element against a condition and returns either True or False. E.g.
 ```python
-lambda x: x % == 0
+lambda x: x % 2 == 0
 ```
 And for Reduce, you need a function which computes one element with its next element from the iterable. This is the only function of those three, which takes two arguments. E.g.
 ```python
