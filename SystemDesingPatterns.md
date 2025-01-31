@@ -35,8 +35,6 @@ Uses an API gateway (like NGINX or Envoy) to route, rate limit and aggregate ans
 In summary: Write to a message queue via a write service and have the workers/consumers update the databaset and write to the Cache.
 Read from the Cache.
 
-
-
   ![image](https://github.com/user-attachments/assets/30e9b122-304b-4d6e-bb89-94f1f0bd866d)
 
 
@@ -77,6 +75,7 @@ Knowledge of batch vs. real-time processing.
 Event-driven architectures.
 
 ## Distributed Systems
+
 Understanding of distributed computing principles.
 
 CAP theorem, consistency models, and fault tolerance.
