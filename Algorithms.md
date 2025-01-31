@@ -34,7 +34,7 @@ def birthday(s, d, m):
     if curr_sum == d:
         sub_array_counter += 1
         
-    for i in range(len(s) - m):
+    for i in range(len(s) - m): # we dont go until len(s) - m  + 1 because we will add the last element in the foor loop instead.
         
         curr_sum = curr_sum - s[i] + s[i+m]
         
