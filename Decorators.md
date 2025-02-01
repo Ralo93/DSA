@@ -1,11 +1,21 @@
 # Decorators
 
-## TODO
-
+## Simple Wrapper Function
 Create a simple example for showcasing how they work
 
 ```python
-# Code comes here
+def time_function(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs): # *are any kind of arguments, kwargs are any kind of keyword arguments like age=25, city='Berlin'
+
+        start_time = time.perf_counter()
+        result = func(*args, **kwargs)
+        end_time = time.perf_counter()
+
+        print(f"Execution time: {end_time-start_time:.8f} seconds")
+
+        return result
+    return wrapper
 ```
 
 Useful python decorators for ML and data science. Lets dive in!
