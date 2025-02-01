@@ -1,5 +1,13 @@
 # Decorators
 
+## TODO
+
+Create a simple example for showcasing how they work
+
+```python
+# Code comes here
+```
+
 Useful python decorators for ML and data science. Lets dive in!
   
 So first we have a timing wrapper function for monitoring function performance and trying to find any bottlenecks. Really handy I think.
