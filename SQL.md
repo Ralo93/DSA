@@ -71,6 +71,8 @@ You can use multiple conditions on joins.
 
 Return a single value, examples: MAX, MIN, AVG, SUM, COUNT.
 
+Aggregations can not be nested! No max(count( ...). order by and then limit for the max element
+
 ####  you cannot use aggregate functions like COUNT() directly in a WHERE clause.
 
 Others include ROUND(EXPRESSION, decimals) and CAST(value AS DECIMAL):
