@@ -6,6 +6,16 @@
 
 
 ## Functions I am not aware of:
+
+### Series Generation:
+
+```sql
+SELECT generate_series('2023-01-01'::date, '2023-12-31'::date, '1 month'::interval);
+
+SELECT generate_series('2023-01-01'::date, '2023-01-31'::date, '1 day'::interval);
+```
+
+
 Window Functions:
 
 ROW_NUMBER()
