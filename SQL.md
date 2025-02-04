@@ -5,6 +5,59 @@
 - Does the table need to be joined with itself?
 
 
+## Functions I am not aware of:
+Window Functions:
+
+ROW_NUMBER()
+RANK()
+DENSE_RANK()
+LAG() and LEAD()
+FIRST_VALUE() and LAST_VALUE()
+
+Aggregation Functions:
+
+COUNT(DISTINCT)
+STRING_AGG()
+PERCENTILE_CONT()
+MEDIAN()
+
+String Manipulation:
+
+SUBSTRING()
+CONCAT()
+REPLACE()
+TRIM()
+LOWER() and UPPER()
+
+Date/Time Functions:
+
+DATE_TRUNC()
+EXTRACT()
+INTERVAL
+NOW()
+DATEADD()
+
+Advanced Functions:
+
+COALESCE()
+NULLIF()
+GREATEST()
+LEAST()
+CASE statements
+
+Performance/Optimization:
+
+EXPLAIN ANALYZE
+Subquery optimization
+Indexing strategies
+
+Analytical Functions:
+
+NTILE()
+CUME_DIST()
+PERCENT_RANK()
+
+
 ## SET Operations:
 
 - UNION, INTERSECT and DIFFERENCE need the same columns for joining together.
