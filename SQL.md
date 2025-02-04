@@ -16,6 +16,16 @@
 
 SQL can not count or do comparisons with NULL values. These need to be handled specifically.
 
+To incoroprate customers which might not end up in a filter table, you can do:
+
+```sql
+
+select customer_id, coalesce(change_counter, 0) as counter
+from all_customers -- which is defined via a CTE
+left join changes using  (customer_id)
+
+```
+
 
 ## SELECT
 ```sql
