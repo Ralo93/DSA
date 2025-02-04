@@ -43,6 +43,18 @@ where skill_level between 5 and 10
 
 ## JOINS:
 
+Simple joins could be like:
+
+```sql
+select * from
+customer_orders
+join pzza_names
+USING (pizza_id)
+```
+
+This removes double columns!
+
+
 LEFT JOIN: Returns ALL rows from the left table and inserts NULLs where there is no entry from the right table.
 
 RIGHT JOIN: Returns ALL rows from the right table and inserts NULLs where there is no entry from the left table.
