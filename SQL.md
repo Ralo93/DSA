@@ -221,6 +221,24 @@ GROUP BY activity_date;
 Why 29? Well because you want the last day included, which then results in the date_sub of 29 - the 29 days before it. Since the boundaries are included, this gives you the last 30 days.
 
 
+```sql
+select DATE_PART('hour' from order_time)
+
+-- Gets the hour, can also be month, day, minute
+```
+
+
+Get the day of the week:
+
+```sql
+SELECT 
+    order_time,
+    EXTRACT(DOW FROM customer_orders.order_time) as day_number,
+    TO_CHAR(order_time, 'Day') as day_name
+FROM customer_orders;
+
+```
+
 ### Getting Unique Items:
 
 ```sql
