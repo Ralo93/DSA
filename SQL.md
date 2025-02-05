@@ -233,6 +233,7 @@ Get the day of the week:
 ```sql
 SELECT 
     order_time,
+    EXTRACT(DOW FROM order_time) as day_number,
     TO_CHAR(order_time, 'Day') as day_name
 FROM customer_orders;
 
