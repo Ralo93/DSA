@@ -18,14 +18,33 @@ def time_function(func):
     return wrapper
 
 
-@time_function
+def time_function2(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+
+        start_time = time.perf_counter()
+        result = func(*args, **kwargs)
+        end_time = time.perf_counter()
+
+        print(f"Execution took {end_time-start_time:.8f} seconds!")
+        return result
+    return wrapper
+
+
+@time_function2
 def get_max(arr):
 
     result = [x**2 for x in arr]
     return result
 
-result = get_max(array)
-print(result)
+#result = get_max(array)
+#print(result)
 
 
+generator = (2**x for x in array)
+
+
+for item in generator:
+    print(item)
+    time.sleep(4)
 

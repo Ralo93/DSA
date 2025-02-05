@@ -43,10 +43,8 @@ def dfs(graph, start):
         for neighbor in graph.get(node, []):
 
             if neighbor not in seen:
-
                 seen.add(neighbor)
                 stack.append(neighbor)
-
             else:
                 print(f"Cycle detected from {node} to {neighbor}")
 
@@ -79,3 +77,18 @@ def bfs(graph, start):
 t = dfs(graph, 'A')
 
 print(t)
+
+
+grid = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+transposed_grid = grid.T
+
+for row in transposed_grid:
+
+    print(row)
+
+
+for col in range(len(grid[0])):
+
+    current_column = [row[col] for row in grid]
+    print(current_column)
