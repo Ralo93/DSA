@@ -13,7 +13,7 @@
 SELECT generate_series('2023-01-01'::date, '2023-12-31'::date, '1 month'::interval);
 
 SELECT generate_series('2023-01-01'::date, '2023-01-31'::date, '1 day'::interval);
-
+  
 
 WITH hours_cte(hour_of_day) AS (
     SELECT generate_series(0, 23)
