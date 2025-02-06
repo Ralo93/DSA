@@ -221,13 +221,14 @@ GROUP BY activity_date;
 Why 29? Well because you want the last day included, which then results in the date_sub of 29 - the 29 days before it. Since the boundaries are included, this gives you the last 30 days.
 
 
+### Get part of a timestamp
 ```sql
 select DATE_PART('hour' from order_time)
 
 -- Gets the hour, can also be month, day, minute
 ```
 
-Get the day of the week:
+### Get the day of the week:
 
 ```sql
 SELECT 
@@ -238,7 +239,7 @@ FROM customer_orders;
 
 ```
 
-Creating a custom week starting at a certain point:
+### Creating a custom week starting at a certain point:
 ```sql
 -- How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
 
@@ -248,6 +249,14 @@ from runners
 group by week
 order by week asc
 ```
+
+### Getting the minutes of a timestamp difference:
+
+```sql
+select runner_id, avg(extract(epoch from (pickup_time::timestamp - order_time)) / 60) as time_diff
+```
+
+
 ### Getting Unique Items:
 
 ```sql
