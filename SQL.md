@@ -227,7 +227,6 @@ select DATE_PART('hour' from order_time)
 -- Gets the hour, can also be month, day, minute
 ```
 
-
 Get the day of the week:
 
 ```sql
@@ -239,6 +238,16 @@ FROM customer_orders;
 
 ```
 
+Creating a custom week starting at a certain point:
+```sql
+-- How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
+
+select count(runner_id) , 
+((registration_date - date('2021-01-01')) / 7 ) + 1 as week
+from runners
+group by week
+order by week asc
+```
 ### Getting Unique Items:
 
 ```sql
