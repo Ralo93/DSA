@@ -24,6 +24,12 @@ FROM hours_cte;
 
 ```
 
+## REGEX
+
+```sql
+select (REGEXP_MATCH(distance, '\d+\.?\d*')[1]::numeric as distance
+```
+
 
 Window Functions:
 
