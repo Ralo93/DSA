@@ -32,8 +32,22 @@ select (REGEXP_MATCH(distance, '\d+\.?\d*'))[1]::numeric as distance
 
 ## Casts
 
+```sql
 If you need to specifically cast something, use ::numeric or ::float or ::timestamp
 
+or ::text
+
+```
+
+## GROUP_CONCAT, STRING_SPLIT and therelike
+
+Using PostGreSQL, here are some string functions to work with:
+```sql
+string_to_array(string, delimiter) -- example string_to_array('1, 2, 3', ',') creates {1, 2, 3}
+unnest(ARRAY[1, 2, 3]) -- creates three rows
+string_agg(column, delimiter) -- combines multiple rows into one string, e.g. string_agg(name, ',') might create 'John, Mary, Steve'
+
+```
 
 Window Functions:
 
