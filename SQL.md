@@ -30,6 +30,10 @@ FROM hours_cte;
 select (REGEXP_MATCH(distance, '\d+\.?\d*'))[1]::numeric as distance
 ```
 
+## Casts
+
+If you need to specifically cast something, use ::numeric or ::float or ::timestamp
+
 
 Window Functions:
 
