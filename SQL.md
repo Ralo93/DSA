@@ -75,6 +75,9 @@ LOWER() and UPPER()
 Date/Time Functions:
 
 DATE_TRUNC()
+```sql
+EXTRACT('MONTH' from start_date) as month
+```
 EXTRACT()
 INTERVAL
 NOW()
