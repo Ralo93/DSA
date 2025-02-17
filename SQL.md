@@ -34,8 +34,13 @@ select (REGEXP_MATCH(distance, '\d+\.?\d*'))[1]::numeric as distance
 
 ```sql
 If you need to specifically cast something, use ::numeric or ::float or ::timestamp
-
 or ::text
+```
+
+### Another cast from int to string:
+```sql
+
+string_agg(cast(plan_id as varchar), '.') as plans
 
 ```
 
