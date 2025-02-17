@@ -40,7 +40,7 @@ or ::text
 ### Another cast from int to string:
 ```sql
 
-string_agg(cast(plan_id as varchar), '.') as plans
+string_agg(cast(plan_id as varchar), ',' ORDER BY plan_id) as plans
 
 ```
 
