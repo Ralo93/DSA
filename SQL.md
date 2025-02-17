@@ -75,6 +75,8 @@ LOWER() and UPPER()
 Date/Time Functions:
 
 DATE_TRUNC()
+
+### EXTRACT
 ```sql
 EXTRACT('MONTH' from start_date) as month
 ```
