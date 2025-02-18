@@ -71,7 +71,10 @@ MEDIAN()
 
 String Manipulation:
 
-SUBSTRING()
+## SUBSTRING()
+```sql
+substring(string_agg(cast plan_id as varchar), ',' order by plan_id) from 3 for 1) as agg
+```
 CONCAT()
 REPLACE()
 TRIM()
